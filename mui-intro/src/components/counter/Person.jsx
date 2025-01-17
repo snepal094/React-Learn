@@ -1,12 +1,12 @@
-import { Box, Typography, Button } from "@mui/material";
-import React, { useState } from "react";
-import { getFullName } from "../../utils/utils";
+import { Box, Typography, Button } from '@mui/material';
+import React, { useState } from 'react';
+import { getFullName } from '../../utils/utils';
 
 const Person = () => {
-  const [firstName, setFirstName] = useState("Siddhant");
-  const [lastName, setLastName] = useState("Shrestha");
+  const [firstName, setFirstName] = useState('Siddhant');
+  const [lastName, setLastName] = useState('Shrestha');
 
-  let college = "KEC";
+  let college = 'KEC';
   return (
     <Box>
       <Typography variant="h3">
@@ -18,8 +18,8 @@ const Person = () => {
         color="success"
         onClick={() => {
           //auto-batching by react, executes both functions in a batch
-          setFirstName("Saugat");
-          setLastName("Neupane");
+          setFirstName('Saugat');
+          setLastName('Neupane');
         }}
       >
         Change Data
