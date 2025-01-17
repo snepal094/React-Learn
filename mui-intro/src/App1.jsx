@@ -24,4 +24,8 @@ const App = () => {
   );
 };
 
+// .jsx file= JS + HTML
+// browser doesn't process .jsx, so the above conversion must be done
+// this conversion is done by a transpiler called babel in react
+
 export default App;
