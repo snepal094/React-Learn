@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button, Box, Typography } from "@mui/material";
+import React, { useState } from 'react';
+import { Button, Box, Typography } from '@mui/material';
 
 //hooks: react functions having a specific task
 //example: useState, useEffect, useRef, useCallback, useMemo
@@ -9,7 +9,6 @@ import { Button, Box, Typography } from "@mui/material";
 //? event: onClick, onChange, onKeyPress, onSubmit, onScroll
 
 const Counter = () => {
-  //   let count = 1;
   const [count, setCount] = useState(0);
 
   const decreaseCount = () => {
@@ -21,27 +20,31 @@ const Counter = () => {
     setCount(0);
   };
   return (
-    <Box>
-      <Typography variant="h3">Count: {count}</Typography>
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={() => {
-          let newCount = count + 1;
-          setCount(newCount);
-        }}
-      >
-        Increase Count
-      </Button>
+    <>
+      <Typography variant="h3" gutterBottom>
+        Count: {count}
+      </Typography>
+      <Box sx={{ display: 'flex', gap: '1rem' }}>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => {
+            let newCount = count + 1;
+            setCount(newCount);
+          }}
+        >
+          Increase Count
+        </Button>
 
-      <Button variant="contained" color="success" onClick={decreaseCount}>
-        Decrease Count
-      </Button>
+        <Button variant="contained" color="success" onClick={decreaseCount}>
+          Decrease Count
+        </Button>
 
-      <Button variant="contained" color="secondary" onClick={resetCount}>
-        Reset Count
-      </Button>
-    </Box>
+        <Button variant="contained" color="secondary" onClick={resetCount}>
+          Reset Count
+        </Button>
+      </Box>
+    </>
   );
 };
 
