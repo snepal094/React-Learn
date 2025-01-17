@@ -5,6 +5,7 @@ import Counter from './components/counter/Counter';
 import Person from './components/counter/Person';
 import Animal from './components/counter/Animal';
 import Student from './components/counter/Student';
+import Actors from './components/counter/Actors';
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       {/* <Counter /> */}
       {/* <Person /> */}
       {/* <Animal /> */}
-      <Student />
+      {/* <Student /> */}
+      <Actors />
     </div>
   );
 };
