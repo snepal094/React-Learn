@@ -8,7 +8,7 @@ const CustomTypography = () => {
       <Typography color="error" gutterBottom sx={{ fontSize: '55px' }}>
         Hello Mom
       </Typography>
-      {/* gutterBottom= padding below */}
+      {/* gutterBottom= padding below, is a truthy value */}
       <Typography variant="h1">Hello Mom</Typography>
       <Typography variant="h2">Hello Mom</Typography>
       <Typography variant="subtitle1">Hello Mom</Typography>
