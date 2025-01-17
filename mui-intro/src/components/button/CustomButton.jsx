@@ -1,8 +1,8 @@
-import React from "react";
-import { Button, IconButton } from "@mui/material";
-import "./buttons.styles.css";
-import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import ModeEditIcon from "@mui/icons-material/ModeEdit";
+import React from 'react';
+import { Button, IconButton } from '@mui/material';
+import './buttons.styles.css';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import ModeEditIcon from '@mui/icons-material/ModeEdit';
 
 const CustomButton = () => {
   return (
@@ -15,7 +15,7 @@ const CustomButton = () => {
       </section>
 
       <section id="color-section" className="button-section">
-        <h1>Button Color</h1>
+        <h1>Button Colors</h1>
         <Button color="primary" variant="contained">
           primary
         </Button>
@@ -34,7 +34,7 @@ const CustomButton = () => {
         <Button color="info" variant="contained">
           info
         </Button>
-        <Button sx={{ background: "#0c6896", color: "#fff" }}>
+        <Button sx={{ background: '#0c6896', color: '#fff' }}>
           Random Color
         </Button>
       </section>
@@ -57,7 +57,7 @@ const CustomButton = () => {
         <Button
           variant="outlined"
           color="success"
-          sx={{ textTransform: "lowercase" }}
+          sx={{ textTransform: 'lowercase' }}
           endIcon={<ModeEditIcon />}
         >
           edit product
@@ -65,10 +65,10 @@ const CustomButton = () => {
         <Button
           variant="outlined"
           color="error"
-          sx={{ textTransform: "capitalize" }}
+          sx={{ textTransform: 'capitalize' }}
           startIcon={<DeleteOutlineIcon />}
           onClick={() => {
-            alert("Deleted");
+            alert('Deleted');
           }}
         >
           delete product
@@ -88,5 +88,7 @@ const CustomButton = () => {
     </div>
   );
 };
+
+// material UI components are styled using sx={{}}
 
 export default CustomButton;
