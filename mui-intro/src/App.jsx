@@ -4,6 +4,7 @@ import CustomTypography from './components/paragraph/CustomTypography';
 import Counter from './components/counter/Counter';
 import Person from './components/counter/Person';
 import Animal from './components/counter/Animal';
+import Student from './components/counter/Student';
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       {/* <CustomTypography /> */}
       {/* <Counter /> */}
       {/* <Person /> */}
-      <Animal />
+      {/* <Animal /> */}
+      <Student />
     </div>
   );
 };
