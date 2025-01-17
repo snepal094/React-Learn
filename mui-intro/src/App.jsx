@@ -6,6 +6,7 @@ import Person from './components/counter/Person';
 import Animal from './components/counter/Animal';
 import Student from './components/counter/Student';
 import Actors from './components/counter/Actors';
+import Book from './components/counter/Book';
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       {/* <Person /> */}
       {/* <Animal /> */}
       {/* <Student /> */}
-      <Actors />
+      {/* <Actors /> */}
+      <Book />
     </div>
   );
 };
